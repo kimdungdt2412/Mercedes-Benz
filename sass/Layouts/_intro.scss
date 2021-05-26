@@ -1,0 +1,85 @@
+
+
+
+
+.intro
+{
+
+    padding: $pd-5 0;
+    opacity: 0;
+    .intro__content.container
+    {
+        
+        padding: 0;
+        
+        .intro__detail
+        {
+            max-width: 66.66667%;
+            text-align: left;
+            
+           
+            padding: $pd-5 0;
+            h2{
+                margin-bottom: 1.4rem;
+                font-family: 'Playfair Display', serif;
+                @include styleText($fs-4 + 2px, normal, $fw-normal);
+            }
+            p{
+                @include styleText(12px, normal, 500);
+                a{
+                    color: $color-blue;
+                    &:hover
+                    {
+                        color: $color-blue-1;
+                    }
+                }
+            }
+            button{
+                margin-top: $mg-3;
+                @include styleButton($color-blue,$color-blue, normal, normal);
+                border-radius: 1px;
+                @include styleText(14px, $color-white-0, 500);
+                &:hover{
+                    @include styleHoverBtn($color-blue-1, $color-blue-1, normal);
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1024px)
+{
+    .intro{
+        .intro__content.container
+        {
+            .intro__detail
+            {
+                max-width: 100%;
+                h2{
+                    font-size: $fs-2;
+                }
+            }
+        }
+    }
+}
+
+@include responsive('medium')
+{
+    .intro
+    {
+        .intro__content.container
+        {
+    
+            .intro__detail
+            {
+                button{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+

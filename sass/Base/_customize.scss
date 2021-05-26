@@ -1,0 +1,48 @@
+
+@media screen and (min-width: 480px)
+{
+    .container {
+        max-width: 420px;
+    }
+}
+
+@media screen and (min-width: 768px)
+{
+    .container {
+        max-width: 708px;
+        
+    }
+}
+
+@media (max-width: 767.98px)
+{
+    .container{
+        margin-left: 30px;
+        margin-right: 30px;
+        max-width: calc(100% - 60px);
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    .container {
+        max-width: 964px;
+        
+    }
+}
+
+@media screen and (min-width: 1280px)
+{
+    .container {
+        max-width: 1280px;
+        
+    }
+}
+
+@media screen and (max-width: 1400px) and (min-width: 1280px)
+{
+    .container {
+        width: 1180px;
+    }
+}
+
